@@ -21,11 +21,11 @@ export default function SmoothScrolling({ children }) {
 
     // Desktop optimized settings
     const lenis = new Lenis({
-      lerp: 0.06, // smoother but cheaper motion
+      lerp: 0.06, 
       duration: 0.6,
       wheelMultiplier: 0.9,
       touchMultiplier: 0.6,
-      smoothTouch: false, // disabling smooth-touch avoids jank
+      smoothTouch: false, 
     });
 
     lenisRef.current = lenis;

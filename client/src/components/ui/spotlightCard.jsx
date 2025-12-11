@@ -28,7 +28,7 @@ function GlowCard({
   const innerRef = useRef(null);
   const [isDesktop, setIsDesktop] = useState(false);
 
-  // 🔍 Track screen size once and on resize
+  //  Track screen size once and on resize
   useEffect(() => {
     if (typeof window === "undefined") return;
 
@@ -103,7 +103,7 @@ function GlowCard({
       touchAction: isDesktop ? "none" : "auto",
     };
 
-    // ✨ Only desktop gets the radial glow background
+    //  Only desktop gets the radial glow background
     if (isDesktop) {
       baseStyles.backgroundImage = `radial-gradient(
         var(--spotlight-size) var(--spotlight-size) at

@@ -70,7 +70,7 @@ function AnimeNavBar({ items, className, defaultActive = "Home" }) {
       initial={{ opacity: 0, y: -20 }}
       animate={isVisible ? { opacity: 1, y: 0 } : { opacity: 0, y: -20 }}
       transition={{ duration: 0.35, ease: "easeInOut" }}
-      style={{ pointerEvents: isVisible ? "auto" : "none" }} // avoid click when hidden
+      style={{ pointerEvents: isVisible ? "auto" : "none" }}
     >
       <div className="flex justify-center pt-6">
         <div

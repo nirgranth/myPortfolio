@@ -5,7 +5,7 @@ import { ScrollReveal } from "@/components/ui/scrollReveal";
 import { Home, User, FolderGit2, Mail, FileUser } from "lucide-react";
 import { useInViewSection } from "./hooks/useInViewSection";
 
-// 🔥 Lazy-load heavy sections to improve performance
+// Lazy-load heavy sections
 const About = lazy(() => import("./components/about.jsx"));
 const Portfolio = lazy(() => import("./components/portfolio.jsx"));
 const Contact = lazy(() => import("./components/contact.jsx"));
@@ -22,7 +22,7 @@ const navItems = [
   },
 ];
 
-// Optional loading placeholder
+// loading placeholder
 function SectionSkeleton({ label }) {
   return (
     <div className="w-full py-10 flex items-center justify-center text-sm text-white/40">
@@ -32,7 +32,7 @@ function SectionSkeleton({ label }) {
 }
 
 export default function App() {
-  // 👁 Detect when to mount sections
+  // Detect when to mount sections
   const [aboutRef, showAbout] = useInViewSection();
   const [portfolioRef, showPortfolio] = useInViewSection();
   const [contactRef, showContact] = useInViewSection();
